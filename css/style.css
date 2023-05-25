@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -16,6 +18,88 @@
 body {
     display: flex;
     justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  position: absolute;
+  width: 61.09px;
+  height: 19px;
+  left: 30px;
+  top: 30px;
+}
+
+/****** Accommodation search engine and filters ***********/
+
+.header-accommodation-search-engine-and-filters-section {
+  margin-top: 109px;
+}
+
+.accommodation-search-engine {
+  display: inline-flex;
+  margin: 35px 0;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.accommodation-search-engine i {
+  background: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  padding: 16px 18px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.location {
+  padding: 0 24px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.search-location-button {
+  padding: 14px 16px;
+  background: #0065FC;
+  border: 1px solid #0065FC;
+  border-radius: 0px 15px 15px 0px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.filters-section {
+  display: flex;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+  border: 2px solid #D9D9D9;
+  border-radius: 25px;
+  padding: 4px 19px;
+}
+
+.filter-item i {
+  padding-right: 10px;
+  
+}
+
+.filter-name {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.information {
+  display: flex;
+  margin: 37.5px 0;
 }
 
 .main-container {
