@@ -48,12 +48,17 @@ nav {
 
 .nav-items a:hover {
   border-top: 2px solid #0065FC;
+  color: #0065FC;
 }
 
 /****** Accommodation search engine and filters ***********/
 
 .header-accommodation-search-engine-and-filters-section {
   margin-top: 109px;
+}
+
+.header-accommodation-search-engine-and-filters-section h2 {
+  margin-bottom: 8px;
 }
 
 .accommodation-search-engine {
@@ -63,27 +68,50 @@ nav {
   align-items: center;
 }
 
-.accommodation-search-engine i {
-  background: #F2F2F2;
+.accommodation-search-engine-icon {
+  padding: 17px 18px;
   border: 1px solid #F2F2F2;
+  background: #F2F2F2;
+  border-radius: 15px 0 0 15px;
+}
+
+.accommodation-search-engine i {
+  color: #000000
+}
+
+form {
+  display: flex;
+}
+
+input {
+  border: none;
   padding: 16px 18px;
-  border-radius: 15px 0px 0px 15px;
-}
-
-.location {
-  padding: 0 24px;
   font-weight: 700;
   font-size: 18px;
 }
 
-.search-location-button {
-  padding: 14px 16px;
+#location {
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+input[type=submit] {
   background: #0065FC;
-  border: 1px solid #0065FC;
-  border-radius: 0px 15px 15px 0px;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 18px;
-  color: #FFFFFF;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+
+textarea:focus, input:focus{
+  outline: none;
 }
 
 .filters-section {

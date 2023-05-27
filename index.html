@@ -44,9 +44,20 @@
             <p>En plein centre-ville ou en pleine nature</p>
           </div>
           <div class="accommodation-search-engine">
-            <i class="fa-solid fa-location-dot"></i>
-            <p class="location">Marseille, France</p>
-            <p class="search-location-button">Recherche</p>
+            <span class="accommodation-search-engine-icon"
+              ><i class="fa-solid fa-location-dot"></i
+            ></span>
+            <form method="get" action="">
+              <input
+                type="text"
+                name="location"
+                id="location"
+                placeholder="Marseille, France"
+              />
+              <input type="submit" value="Rechercher" />
+            </form>
+            <!-- <p class="location">Marseille, France</p>
+            <p class="search-location-button">Recherche</p> -->
           </div>
           <div class="filters-section">
             <p>Filtres</p>
