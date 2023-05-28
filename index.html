@@ -44,10 +44,10 @@
             <p>En plein centre-ville ou en pleine nature</p>
           </div>
           <div class="accommodation-search-engine">
-            <span class="accommodation-search-engine-icon"
-              ><i class="fa-solid fa-location-dot"></i
-            ></span>
             <form method="get" action="index.html">
+              <span class="accommodation-search-engine-icon"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
               <input
                 type="text"
                 name="location"
@@ -55,7 +55,10 @@
                 placeholder="Marseille, France"
                 autocomplete="off"
               />
-              <input type="submit" value="Rechercher" />
+              <button type="submit" class="icon-button">
+                <span class="desktop-text">Rechercher</span>
+                <i class="fa-solid fa-magnifying-glass mobile-icon"></i>
+              </button>
             </form>
           </div>
           <div class="filters-section">
@@ -261,6 +264,7 @@
               <h2 class="section-title">Les plus populaires</h2>
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
+
             <div class="popular-cards">
               <a href="#popular">
                 <article class="card">
@@ -359,7 +363,6 @@
                   src="./images/activites/reno-laithienne.jpg"
                   alt="Photographie du vieux port de Marseille"
                 />
-
                 <h3 class="activities-card-title">Vieux Port</h3>
               </a>
             </article>

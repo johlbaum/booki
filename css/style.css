@@ -32,11 +32,9 @@ body {
 /****** Header ***********/
 
 #logo {
-  position: absolute;
+  margin-top: 30px;
   width: 61.09px;
   height: 19px;
-  left: 30px;
-  top: 30px;
 }
 
 nav {
@@ -70,7 +68,6 @@ nav {
 }
 
 .accommodation-search-engine {
-  display: inline-flex;
   margin: 35px 0;
   border-radius: 15px;
   align-items: center;
@@ -95,7 +92,26 @@ input {
   border: none;
   padding: 16px 18px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.12em;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+.icon-button {
+  background-color: #0065FC;
+  border: none;
+  padding: 16px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  position: relative;
+  left: -20px;
+}
+
+.icon-button i {
+  color: #FFFFFF;
+  
 }
 
 #location {
@@ -107,14 +123,14 @@ input[type=submit] {
   background: #0065FC;
   color: #FFFFFF;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.12em;
   border-radius: 0 15px 15px 0;
   cursor: pointer;
 }
 
 ::placeholder {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.12em;
   color: #000000;
 }
 
@@ -124,13 +140,14 @@ textarea:focus, input:focus{
 
 .filters-title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.12em;
   margin-right: 10px;  
 }
 
 .filters-section {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .filters {
@@ -156,7 +173,7 @@ textarea:focus, input:focus{
 }
 
 .filter-name {
-  font-size: 17px;
+  font-size: 1em;
   font-weight: 700;
 }
 
@@ -204,7 +221,7 @@ textarea:focus, input:focus{
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .euro {
@@ -242,6 +259,7 @@ textarea:focus, input:focus{
 .accommodation-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 25px;
 }
 
@@ -250,7 +268,8 @@ textarea:focus, input:focus{
 }
 
 .accommodation-cards .card {
-  width: 30%;
+  flex-basis: calc(33.33% - 25px);
+  box-sizing: border-box;
 }
 
 .accommodation-cards .card-title {
@@ -295,8 +314,9 @@ textarea:focus, input:focus{
     margin-top: 30px;
 }
 
+
 .popular-cards img {
-    width: 33%;
+    width: 33%; 
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -344,8 +364,6 @@ textarea:focus, input:focus{
 .activities-cards .card {
   padding: 0;
   width: 25%;
-  display: flex;
-  flex-direction: column;
 }
 
 .activities-cards img {
@@ -353,6 +371,7 @@ textarea:focus, input:focus{
   height: 380px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+  display: block;
 }
 
 .activities-card-title {
@@ -375,7 +394,7 @@ footer {
 }
 
 .footer-block-title {
-  font-size: 18px;
+  font-size: 1.12em;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -389,39 +408,90 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+ 
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
-    .hebergements {
+    #accommodation {
         width: 100%;
     }
 
-    .populaires {
+    #popular {
         width: 100%;
         margin-top: 50px;
     }
 
-    .populaires-cards {
+    .popular-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
-        width: 30%;
+    .popular-cards .card {
+        width: 100%;
     }
 
-    .populaires-cards .card-title {
+    .popular-cards .card-title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .popular-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .popular-cards a {
+      display: block;
+      width: 30%;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+  body {
+    font-size: 14px;
+  }
+
+  .main-container {
+    background-color: aqua;
+    padding: 0 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-items a {
+    margin-left: 0;
+  }
+
+  .header-accommodation-search-engine-and-filters-section {
+    margin-top: 30px;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: inline-block;
+  }
+
+  input {
+ 
+    width: 100%;
+  }
+
+  ::placeholder {
+    margin-right: 20px;
+  }
+  
 }
