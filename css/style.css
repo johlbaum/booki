@@ -93,10 +93,16 @@ input {
   padding: 16px 18px;
   font-weight: 700;
   font-size: 1.12em;
+  margin-right: -15px;
 }
 
 .mobile-icon {
   display: none;
+}
+
+.desktop-text {
+  font-size: 1.12em;
+  font-weight: 700;
 }
 
 .icon-button {
@@ -105,8 +111,6 @@ input {
   padding: 16px;
   border-radius: 15px;
   color: #FFFFFF;
-  position: relative;
-  left: -20px;
 }
 
 .icon-button i {
@@ -141,7 +145,7 @@ textarea:focus, input:focus{
 .filters-title {
   font-weight: 700;
   font-size: 1.12em;
-  margin-right: 10px;  
+  margin-right: 15px;  
 }
 
 .filters-section {
@@ -152,6 +156,11 @@ textarea:focus, input:focus{
 
 .filters {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-item:first-child {
+  margin-left: 0;
 }
 
 .filter-item {
@@ -160,7 +169,7 @@ textarea:focus, input:focus{
   margin: 0 10px;
   border: 2px solid #D9D9D9;
   border-radius: 25px;
-  padding: 14px 19px;
+  padding: 14px 20px;
 }
 
 .filter-item:hover {
@@ -205,8 +214,7 @@ textarea:focus, input:focus{
 }
 
 .section-title {
-    margin: 0;
-    font-size: 22px;
+    margin-bottom: 30px;
 }
 
 .card {
@@ -252,10 +260,6 @@ textarea:focus, input:focus{
     width: 65%;
 }
 
-.accommodation-title {
-  margin-bottom: 30px;
-}
-
 .accommodation-cards {
   display: flex;
   flex-wrap: wrap;
@@ -264,7 +268,7 @@ textarea:focus, input:focus{
 }
 
 .accommodation-cards .card-content {
-  padding: 15px;
+  padding: 10px 15px 10px 15px;
 }
 
 .accommodation-cards .card {
@@ -309,9 +313,18 @@ textarea:focus, input:focus{
     align-items: center;
 }
 
+.popular-title i {
+  margin-bottom: 30px;
+}
+
 .popular-cards .card {
     display: flex;
-    margin-top: 30px;
+   
+
+}
+
+.popular-cards .card:first-child {
+  margin-top: 0;
 }
 
 
@@ -385,7 +398,6 @@ footer {
   background-color: #F2F2F2;
   display: flex;
   padding: 20px;
-  margin-top: 35px;
 }
 
 .footer-block {
@@ -408,10 +420,21 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+  .filters-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filters-title {
+    margin-bottom: 20px;
+  }
  
     .hebergements-and-populaires {
         flex-direction: column;
     }
+
+    
 
     #accommodation {
         width: 100%;
@@ -444,7 +467,6 @@ footer {
       display: block;
       width: 30%;
     }
-
 }
 
 /* Small devices (phones, less than 768px) */
@@ -454,8 +476,35 @@ footer {
   }
 
   .main-container {
-    background-color: aqua;
+    padding: 0;
+  }
+
+  .accommodation-search-engine-and-filters {
     padding: 0 20px;
+  }
+
+  .filters {
+    gap: 10px;
+  }
+
+  .filter-item {
+    /* 20px de padding + 2px de marge + 5px de gap */
+    width: calc(50% - 49px);
+    margin: 0px 0px 10px 0px;
+  }
+
+  .filter-item:nth-child(3) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .filter-item:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .filter-item:nth-child(4) {
+    margin-right: 0;
+    margin-bottom: 0;
   }
 
   nav {
@@ -493,5 +542,73 @@ footer {
   ::placeholder {
     margin-right: 20px;
   }
-  
+
+  .section-title {
+    margin-bottom: 15px;
+  }
+
+  .hebergements-and-populaires section {
+   border-radius: 0;
+  }
+
+  .hebergements-and-populaires {
+    flex-direction: column-reverse;
+  }
+
+  #popular {
+    margin-top: 0;
+  }
+
+  .popular-cards {
+    flex-direction: column;
+  }
+
+  .popular-cards a {
+    width: 100%;
+  }
+
+  .activities-cards {
+    flex-direction: column;
+  }
+
+  .accommodation-cards {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  #accommodation {
+    background-color: #FFFFFF;
+  }
+
+  #activities {
+    margin: 0;
+  }
+
+  .activities-cards .card {
+    width: 100%;
+  }
+
+  .activities-cards img {
+    height: 141px;
+  }
+
+  .footer-block-elements ul li a {
+    font-size: 1.12em;
+  }
+
+  .footer-block {
+    margin: 0px 0px 29px 0px;
+    width: 100%;
+  }
+
+  .footer-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-block-elements ul li:last-child {
+    margin-bottom: 0;
+  }
 }
