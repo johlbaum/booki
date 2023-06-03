@@ -75,7 +75,7 @@ nav {
 /****** Accommodation search engine and filters ******/
 
 #accommodation-search-engine-and-filters {
-  margin-top: 109px;
+  margin-top: 56px;
 }
 
 .header-accommodation-search-engine-and-filters h1 {
@@ -83,10 +83,18 @@ nav {
   font-size: 1.37em;
 }
 
+.header-accommodation-search-engine-and-filters p {
+  font-size: 1em;
+}
+
 .information {
   display: flex;
   margin: 37.5px 0;
   align-items: center;
+}
+
+.information p {
+  font-size: 1em;
 }
 
 .information span {
@@ -261,10 +269,6 @@ textarea:focus, input:focus{
   object-fit: cover;
 }
 
-.card-title {
-  font-size: 1em;
-}
-
 .euro {
   font-weight: 700;
 }
@@ -301,6 +305,7 @@ textarea:focus, input:focus{
 
 .accommodation-cards .card-title {
   margin-bottom: 8px;
+  font-size: 1em;
 }
 
 .accommodation-cards .card-subtitle {
@@ -364,6 +369,7 @@ textarea:focus, input:focus{
 .popular-cards .card-title {
   margin-top: 10px;
   margin-bottom: 4px;
+  font-size: 1em;
 }
 
 .popular-cards .card-subtitle {
@@ -440,6 +446,10 @@ footer {
   list-style-type: none;
 }
 
+.footer-block-elements ul li a {
+  font-size: 1em;
+}
+
 /****** Media queries ******/
 
 @media (max-width: 1024px) {
@@ -480,10 +490,6 @@ footer {
     margin-bottom: 0;
   }
 
-  .popular-cards .card-title {
-    font-size: 14px;
-  }
-
   .popular-cards .card-subtitle {
     font-size: 13px;
   }
@@ -498,11 +504,7 @@ footer {
   }
 }
 
-@media (max-width: 767.98px) {
-  body {
-    font-size: 14px;
-  }
-
+@media (max-width: 768px) {
   .main-container {
     padding: 0;
   }
@@ -564,6 +566,10 @@ footer {
     gap: 10px;
   }
 
+  .filter-name {
+    font-size: 0.80em;
+  }
+
   .filter-item {
     width: calc(50% - 49px);
     margin: 0px 0px 10px 0px;
@@ -607,6 +613,10 @@ footer {
     margin-top: 0;
   }
 
+  .popular-title i {
+    margin-bottom: 15px;
+  }
+
   .popular-cards {
     flex-direction: column;
   }
@@ -617,6 +627,7 @@ footer {
 
   .popular-cards .card {
     margin-bottom: 30px;
+    width: auto;
   }
 
   #activities {
@@ -637,10 +648,6 @@ footer {
 
   footer {
     flex-direction: column;
-  }
-
-  .footer-block-elements ul li a {
-    font-size: 1.12em;
   }
 
   .footer-block {
