@@ -61,11 +61,11 @@ nav {
 
 /****** Accommodation search engine and filters ***********/
 
-.header-accommodation-search-engine-and-filters-section {
+#accommodation-search-engine-and-filters {
   margin-top: 109px;
 }
 
-.header-accommodation-search-engine-and-filters-section h2 {
+.header-accommodation-search-engine-and-filters h1 {
   margin-bottom: 8px;
   font-size: 1.37em;
 }
@@ -73,7 +73,6 @@ nav {
 .accommodation-search-engine {
   margin: 35px 0;
   border-radius: 15px;
-  align-items: center;
 }
 
 .accommodation-search-engine-icon {
@@ -153,10 +152,9 @@ textarea:focus, input:focus{
   margin-right: 15px;  
 }
 
-.filters-section {
+.filters-container {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .filters {
@@ -231,6 +229,7 @@ textarea:focus, input:focus{
 
 .section-title {
     margin-bottom: 30px;
+    font-size: 1.37em;
 }
 
 .card {
@@ -258,12 +257,12 @@ textarea:focus, input:focus{
 
 /****** Hebergements And Populaires ***********/
 
-.hebergements-and-populaires {
+.accommodation-and-popular {
     display: flex;
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.accommodation-and-popular section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -345,7 +344,7 @@ textarea:focus, input:focus{
 
 .popular-cards img {
     width: 33%; 
-    height: 136px;
+    height: 144px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -378,10 +377,6 @@ textarea:focus, input:focus{
 #activities {
   margin-top: 35px;
   padding: 30px;
-}
-
-.activities-title {
-  margin-bottom: 30px;
 }
 
 .activities-cards {
@@ -452,7 +447,7 @@ footer {
     font-size: 14px;
   }
 
-  .filters-section {
+  .filters-container {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -461,7 +456,7 @@ footer {
     margin-bottom: 20px;
   }
  
-    .hebergements-and-populaires {
+    .accommodation-and-popular {
         flex-direction: column;
     }
 
@@ -513,7 +508,7 @@ footer {
     padding: 0;
   }
 
-  .accommodation-search-engine-and-filters {
+  #accommodation-search-engine-and-filters {
     padding: 0 20px;
   }
 
@@ -567,7 +562,7 @@ footer {
 
 }
 
-  .header-accommodation-search-engine-and-filters-section {
+  #accommodation-search-engine-and-filters {
     margin-top: 30px;
   }
 
@@ -598,11 +593,11 @@ footer {
     margin-bottom: 15px;
   }
 
-  .hebergements-and-populaires section {
+  .accommodation-and-popular section {
    border-radius: 0;
   }
 
-  .hebergements-and-populaires {
+  .accommodation-and-popular {
     flex-direction: column-reverse;
   }
 
